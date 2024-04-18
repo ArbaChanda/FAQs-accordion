@@ -2,16 +2,17 @@
 
 /* for background color hsl(275, 100%, 97%);
 for background color of main area hsl(0, 0%, 100%)
-for icons and "+" sings hsl(292, 16%, 49%)
+for icons and "+" sings hsl(292, 16%, 49%) color of answers
 for main heading and questions hsl(292, 42%, 14%) */
 
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: hsl(275, 100%, 97%);
-    height: 100vh;
-    width: 100vw;
+    margin-top: 9.3%;
+    height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,24 +28,64 @@ body{
 }
 
 .container{
+    padding: 25px;
     background-color: hsl(0, 0%, 100%);
-    height: 400px;
-    width: 40%;
+    height: auto;
+    width: 35%;
     border-radius: 15px;
+    flex-direction: column;
 }
 
 /* Title  */
 
 .title{
-    padding: 35px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10px;
 }
 
 .title h1{
     margin-left: 15px;
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: hsl(292, 42%, 14%);
 }
+
+/* QUESTION  */
+
+.questions{
+    overflow: auto;
+    height: auto;
+}
+
+.question{
+    height: 50px;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(232, 226, 226);
+    color: hsl(292, 42%, 14%);
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.65rem;
+    cursor: pointer;
+}
+
+.question h2:hover{
+    color:  #AD28EB;
+}
+
+.question svg{
+    margin-left:13px ;
+}
+
+.four{
+    border: none;
+}
+
+/* ANSWERS  */
+
+.answer{
+    display: none;
+}
+
