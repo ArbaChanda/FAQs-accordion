@@ -89,3 +89,8 @@ body{
     display: none;
 }
 
+.answer.active {
+    display: block;
+    max-height: 2000px; /* Adjust this value as needed */
+    transition: max-height 0.3s ease; /* Optional: adds a smooth transition */
+}
